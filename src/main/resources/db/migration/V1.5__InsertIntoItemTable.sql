@@ -1,0 +1,1 @@
+INSERT INTO item (name, price) VALUES ('Lettuce', 40.0);
