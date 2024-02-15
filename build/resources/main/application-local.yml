@@ -1,0 +1,14 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: validate
+  datasource:
+    url: jdbc:postgresql://localhost:5433/grocery1
+    username: grocery1
+    password: postgres
+logging:
+  level:
+    root: INFO
+application:
+  uiHost: http://localhost:3000
+#  movieServiceHost: http://ec2-13-233-25-78.ap-south-1.compute.amazonaws.com:4567/
