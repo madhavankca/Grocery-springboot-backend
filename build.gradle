@@ -20,6 +20,12 @@ repositories {
 }
 
 dependencies {
+    implementation('com.fasterxml.jackson.core:jackson-databind:2.14.0-rc1') {
+        version {
+            strictly '2.14.0-rc1'
+        }
+    }
+    implementation 'com.fasterxml.jackson:jackson-bom:2.13.2'
     testImplementation platform('org.junit:junit-bom:5.9.1')
     testImplementation 'org.junit.jupiter:junit-jupiter'
     implementation 'org.springframework.boot:spring-boot-starter'
@@ -27,6 +33,7 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.flywaydb:flyway-core'
     implementation 'org.springframework.boot:spring-boot-starter-web'
+    annotationProcessor "org.springframework.boot:spring-boot-configuration-processor"
     implementation 'org.postgresql:postgresql'
     testImplementation 'com.h2database:h2'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.3.1'

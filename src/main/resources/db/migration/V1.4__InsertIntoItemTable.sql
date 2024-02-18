@@ -1,1 +1,2 @@
-INSERT INTO item (name, price) VALUES ('Carrot',55.0);
+INSERT INTO item (name, price) VALUES ('Apple', 110.0);
+
