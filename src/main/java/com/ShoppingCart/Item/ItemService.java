@@ -20,9 +20,6 @@ public class ItemService {
     }
 
     public Optional<Item> getItemById(long id) {
-        System.out.println("getItemById method IN");
-        Optional<Item> optionalItem;
-        optionalItem = this.itemRepository.findById(id);
-        return optionalItem;
+        return this.itemRepository.findById(id);
     }
 }
